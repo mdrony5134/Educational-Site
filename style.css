@@ -464,76 +464,74 @@ button{
 
 /* responsive css */
  
-/* For screens smaller than 768px (tablets) */
-@media (max-width: 768px) {
-    .top_nav {
-        padding: 10px 20px;
-    }
-    .nav {
-        padding: 15px 20px;
-    }
-    .hero {
-        height: 300px;
-        background-position: center;
-    }
-    .hero_content {
-        top: 200px;
-        left: 50px;
-    }
-    .about,
-    .main,
-    .Our_teacher,
-    .statics,
-    .managing_committee {
-        padding: 0 20px;
-    }
-    .grid_container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+ /* Add your existing CSS code here */
 
-/* Add your existing CSS here */
-
-/* Mobile-first approach */
+/* Mobile-first approach (styles for smaller screens) */
 body {
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Responsive CSS for mobile devices */
+.top_nav {
+    background-color: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+}
+
+.nav_bar {
+    background-color: #F0F0F0;
+    color: black;
+    padding: 20px;
+}
+
+.sub_nav {
+    background-color: #362FD9;
+    padding: 8px 20px;
+}
+
+/* Responsive styles for screens smaller than 480px */
 @media (max-width: 480px) {
     .top_nav {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         padding: 10px;
     }
-    .contact > a,
-    .social > a {
+
+    .top_nav > div {
+        margin-top: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .nav img {
+        width: 100px;
+    }
+
+    .nav_bar {
+        padding: 10px;
+    }
+
+    .nav_bar_item ul > li {
         margin: 10px 0;
     }
-    .nav img {
-        width: 40%;
-    }
-    .nav_right > img {
-        margin-left: 0;
-    }
-    .hero {
-        height: 250px;
-        background-position: center;
-    }
-    .hero_content {
-        top: 150px;
-        left: 10px;
-    }
-    .about_left_heading h2,
-    .about_right_heading h2 {
-        font-size: 22px;
-    }
-    .grid_container {
-        grid-template-columns: 1fr;
-    }
-    .managing_committee div {
-        padding: 10px;
+
+    .sub_nav {
+        padding: 10px 20px;
     }
 }
-
- 
